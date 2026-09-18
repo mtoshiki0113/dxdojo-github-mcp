@@ -51,6 +51,8 @@ jobs:
 
       - name: Pages 用の設定
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: 公開するファイルをまとめる（成果物 = artifact）
         uses: actions/upload-pages-artifact@v3
